@@ -1,0 +1,25 @@
+1. Create MariaDB RDS with free tier ,with instance connect.
+
+Root user : admin
+rrot pwd : admin-123
+
+2. Now connect to this EC2 .
+
+ Install MYSQL client on EC2
+COnnect to RDS 
+ mysql -h database-1.clyiog0o8d75.ap-south-1.rds.amazonaws.com -u admin -p
+
+ 3. Create DB studentDB as metnioned in READMe.md
+
+ 
+ 4. Create user 
+
+ CREATE USER 'newuser'@'%' IDENTIFIED BY 'strongpassword';  
+ --The '%' means the user can connect from any host (you can restrict to a specific IP if needed).
+ 
+ CREATE USER 'sonalis'@'%' IDENTIFIED BY 'sonali1234';
+
+ 5. Grant permission to this user
+ 
+GRANT ALL PRIVILEGES ON student_db.* TO 'sonalis'@'%';
+ 
