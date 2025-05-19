@@ -72,3 +72,7 @@ http://localhost:8080
 
 To keep the application running in the background, you can use nohup or a similar method. 
 Ex: nohup java -jar target/spring-backend-v1.jar > app.log 2>&1 &
+
+### Step 6: check whether its running or not
+ps aux | grep spring-backend-v1.jar
+
