@@ -61,7 +61,7 @@ Run the generated JAR file by using the following command:
 
 ```bash
 
-java -jar target\spring-backend-v1.jar
+java -jar target/student-registration-backend-0.0.1-SNAPSHOT.jar
 ```
 
 The application will start and be accessible at:
@@ -71,8 +71,7 @@ http://localhost:8080
 ### Step 5: Keep the Application Running
 
 To keep the application running in the background, you can use nohup or a similar method. 
-Ex: nohup java -jar target/spring-backend-v1.jar > app.log 2>&1 &
+Ex: nohup java -jar target/student-registration-backend-0.0.1-SNAPSHOT.jar > app.log 2>&1 &
 
 ### Step 6: check whether its running or not
-ps aux | grep spring-backend-v1.jar
-
+ps aux | grep student-registration-backend-0.0.1-SNAPSHOT.jar
